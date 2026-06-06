@@ -1,5 +1,5 @@
 Store Rating Application
-About the Project
+(About the Project)
 
 The application allows users to view stores and submit ratings, while store owners can view ratings for their stores and administrators can manage users and stores.
 
@@ -7,45 +7,45 @@ The project is built using ReactJS for the frontend, Node.js and ExpressJS for t
 
 ###Features
 Admin
--Login using secure authentication
--Add new users
--Add new stores
--View all users
--View all stores
--Search users and stores
--View user details
--See total users, stores, and ratings on the dashboard
+1. Login using secure authentication
+2. Add new users
+3. Add new stores
+4. View all users
+5. View all stores
+6. Search users and stores
+7. View user details
+8. See total users, stores, and ratings on the dashboard
 
 Store Owner
--Login to owner dashboard
--View store information
--View average rating of the store
--View users who rated the store
--Change password
+1. Login to owner dashboard
+2. View store information
+3. View average rating of the store
+4. View users who rated the store
+5. Change password
 
 User
--Register and login
--View all available stores
--Search stores by name or address
--Submit ratings
--Update previously submitted ratings
--Change password
+1. Register and login
+2. View all available stores
+3. Search stores by name or address
+4. Submit ratings
+5. Update previously submitted ratings
+6. Change password
 
 
 ###Technologies Used
 Frontend
--ReactJS
--React Router DOM
--Axios
+1. ReactJS
+2. React Router DOM
+3. Axios
 
 Backend
--Node.js
--ExpressJS
--JWT Authentication
--bcrypt
+1. Node.js
+2. ExpressJS
+3. JWT Authentication
+4. bcrypt
 
 Database
--MySQL
+1. MySQL
 
 
 ###Project Structure
@@ -71,10 +71,9 @@ store-rating-app
 ###Backend Setup
 
 Open terminal and go to backend folder:
-
-cd backend
-npm install
-npm start
+1. cd backend
+2. npm install
+3. npm start
 
 Backend runs on: http://localhost:5000
 
@@ -82,36 +81,32 @@ Backend runs on: http://localhost:5000
 ###Frontend Setup
 
 Open another terminal and go to frontend folder:
-
-cd frontend
-npm install
-npm run dev
+1. cd frontend
+2. npm install
+3. npm run dev
 
 Frontend runs on: http://localhost:5173
 
 
 ###Test Accounts
 Admin
-
-Email: admin@test.com
-Password: admin123
+1. Email: admin@test.com
+2. Password: admin123
 
 Store Owner
-
-Email: owner@test.com
-Password: owner123
+1. Email: owner@test.com
+2. Password: owner123
 
 User
-
-Email: sam@example.com
-Password: user123
+1. Email: sam@example.com
+2. Password: user123
 
 ###Notes
--Passwords are stored in encrypted format using bcrypt.
--Authentication is implemented using JWT tokens.
--Users can update their ratings after submission.
--Store owners can view ratings given by users.
--Admin can manage users and stores from the dashboard.
+1. Passwords are stored in encrypted format using bcrypt.
+2. Authentication is implemented using JWT tokens.
+3. Users can update their ratings after submission.
+4. Store owners can view ratings given by users.
+5. Admin can manage users and stores from the dashboard.
 
 
 ###Author
