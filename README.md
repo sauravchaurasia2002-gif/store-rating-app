@@ -1,210 +1,123 @@
-# Store Rating Application
+Store Rating Application
+About the Project
 
-A full-stack Store Rating Application built using ReactJS, Node.js, Express.js, MySQL, and JWT Authentication.
+This project was developed as part of a coding challenge. The application allows users to view stores and submit ratings, while store owners can view ratings for their stores and administrators can manage users and stores.
 
-## Features
+The project is built using ReactJS for the frontend, Node.js and ExpressJS for the backend, and MySQL as the database.
 
-### System Administrator
-- Login with JWT Authentication
-- Add Users
-- Add Stores
-- View All Users
-- View All Stores
-- Search Users
-- Search Stores
-- Sort Users by Name
-- View User Details
-- Dashboard Statistics
-  - Total Users
-  - Total Stores
-  - Total Ratings
+Features
+Admin
+Login using secure authentication
+Add new users
+Add new stores
+View all users
+View all stores
+Search users and stores
+View user details
+See total users, stores, and ratings on the dashboard
+Store Owner
+Login to owner dashboard
+View store information
+View average rating of the store
+View users who rated the store
+Change password
+User
+Register and login
+View all available stores
+Search stores by name or address
+Submit ratings
+Update previously submitted ratings
+Change password
+Technologies Used
+Frontend
+ReactJS
+React Router DOM
+Axios
+Backend
+Node.js
+ExpressJS
+JWT Authentication
+bcrypt
+Database
+MySQL
+Project Structure
 
-### Normal User
-- Register and Login
-- Search Stores
-- Submit Ratings
-- Update Ratings
-- Change Password
+store-rating-app
 
-### Store Owner
-- Login
-- View Assigned Store
-- View Average Rating
-- View Users Who Rated Store
-- Change Password
+├── backend
 
----
+├── frontend
 
-## Technologies Used
+├── database.sql
 
-### Frontend
-- ReactJS
-- React Router DOM
-- Axios
+└── README.md
 
-### Backend
-- Node.js
-- Express.js
+Database Setup
+Open MySQL Workbench.
+Create a database named:
 
-### Database
-- MySQL
+store_rating_db
 
-### Authentication
-- JWT (JSON Web Token)
+Open the database.sql file.
+Execute the SQL script.
+All required tables and sample data will be created automatically.
+Backend Setup
 
----
+Open terminal and go to backend folder:
 
-## Project Structure
-
-backend/
-├── routes/
-├── controllers/
-├── models/
-├── middleware/
-├── config/
-├── server.js
-
-frontend/
-├── src/
-│ ├── pages/
-│ ├── services/
-│ ├── routes/
-│ ├── App.jsx
-│ └── main.jsx
-
----
-
-## Installation
-
-### Clone Repository
-
-```bash
-git clone <your-github-repository-url>
-```
-
-### Backend Setup
-
-```bash
 cd backend
 npm install
-```
-
-Create `.env`
-
-```env
-PORT=5000
-
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=store_rating_app
-
-JWT_SECRET=mysecretkey
-```
-
-Run Backend
-
-```bash
 npm start
-```
 
-Server runs on:
+Backend runs on:
 
-```text
 http://localhost:5000
-```
+Frontend Setup
 
----
+Open another terminal and go to frontend folder:
 
-### Frontend Setup
-
-```bash
 cd frontend
 npm install
 npm run dev
-```
 
 Frontend runs on:
 
-```text
 http://localhost:5173
-```
+Test Accounts
+Admin
 
----
+Email:
+admin@test.com
 
-## Database Setup
+Password:
+admin123
 
-Create MySQL Database
+Store Owner
 
-```sql
-CREATE DATABASE store_rating_app;
-```
+Email:
+owner@test.com
 
-Import the provided SQL file.
+Password:
+owner123
 
----
+User
 
-## Test Credentials
+Email:
+sam@example.com
 
-### Admin
+Password:
+user123
 
-```text
-Email: admin@test.com
-Password: admin123
-```
-
-### Store Owner
-
-```text
-Email: owner@test.com
-Password: owner123
-```
-
-### User
-
-```text
-Email: sam@example.com
-Password: user123
-```
-
----
-
-## API Endpoints
-
-### Authentication
-
-```text
-POST /api/auth/register
-POST /api/auth/login
-```
-
-### Users
-
-```text
-GET /api/users
-POST /api/users
-PUT /api/users/password
-```
-
-### Stores
-
-```text
-GET /api/stores
-POST /api/stores
-```
-
-### Ratings
-
-```text
-GET /api/ratings
-POST /api/ratings
-PUT /api/ratings
-```
-
----
-
-## Author
+Notes
+Passwords are stored in encrypted format using bcrypt.
+Authentication is implemented using JWT tokens.
+Users can update their ratings after submission.
+Store owners can view ratings given by users.
+Admin can manage users and stores from the dashboard.
+Author
 
 Saurav Kumar
 
 PG-DAC Student
+
+Full Stack Development (MERN / JavaScript)
