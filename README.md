@@ -32,6 +32,43 @@ User
 6. Change password
 
 
+### Working Flow
+
+#### User Flow
+
+1. A new user can register using the registration page.
+2. After successful login, the user is redirected to the dashboard.
+3. The user can browse all available stores.
+4. The user can search stores by name or address.
+5. The user can submit a rating between 1 and 5.
+6. The user can update an existing rating at any time.
+7. The user can change their password.
+
+#### Admin Flow
+
+1. Admin logs into the system using secure authentication.
+2. Admin can add new users with different roles (Admin, User, Store Owner).
+3. Admin can add new stores.
+4. Admin can view all users and stores.
+5. Admin can search and sort users and stores.
+6. Admin dashboard displays total users, stores, and ratings.
+
+#### Store Owner Flow
+
+1. Store owner logs into the owner dashboard.
+2. Store owner can view store details.
+3. Store owner can view the average rating of the assigned store.
+4. Store owner can see all users who rated the store.
+5. Store owner can change their password.
+
+#### Rating Flow
+
+1. Ratings are stored in the MySQL database.
+2. Each user can submit one rating per store.
+3. Existing ratings can be modified.
+4. Average ratings are calculated dynamically and displayed across the application.
+
+
 ###Technologies Used
 Frontend
 1. ReactJS
@@ -46,6 +83,23 @@ Backend
 
 Database
 1. MySQL
+
+
+### Application Architecture
+
+Frontend (ReactJS)
+↓
+Axios API Calls
+↓
+Backend (Node.js + ExpressJS)
+↓
+MySQL Database
+
+Security:
+
+* JWT Authentication
+* bcrypt Password Hashing
+* Role-Based Access Control
 
 
 ###Project Structure
