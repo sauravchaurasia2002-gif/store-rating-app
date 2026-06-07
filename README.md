@@ -87,13 +87,7 @@ Database
 
 ### Application Architecture
 
-Frontend (ReactJS)
-↓
-Axios API Calls
-↓
-Backend (Node.js + ExpressJS)
-↓
-MySQL Database
+Frontend (ReactJS) -> Axios API Calls -> Backend (Node.js + ExpressJS) -> MySQL Database
 
 Security:
 
